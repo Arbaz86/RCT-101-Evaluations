@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import styles from "./addTask.module.css";
 import { GoPlus } from "react-icons/go";
-import tasks from "../../data/tasks.json"
 
 const AddTask = ({ handleText }) => {
   // NOTE: do not delete `data-cy` key value pair
