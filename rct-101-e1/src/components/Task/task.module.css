@@ -1,0 +1,9 @@
+.task {
+  /* Sample  */
+  display: flex;
+  padding: 5px;
+}
+
+.striked {
+  text-decoration: line-through;
+}
