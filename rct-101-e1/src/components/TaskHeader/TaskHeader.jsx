@@ -5,11 +5,11 @@ const TaskHeader = ({ todos }) => {
   // sample values to be replaced
   let totalTask = todos.length;
 
-  let done = todos.filter((t) => t.done === true);
+  // let done = todos.filter((t) => t.done === true);
 
 
 
-  let unCompletedTask = done.length;
+  let unCompletedTask = 0;
 
   // NOTE: do not delete `data-cy` key value pair
   return (

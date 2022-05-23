@@ -14,12 +14,14 @@ const AddTask = ({ handleText }) => {
   return (
     <div className={styles.todoForm}>
       <input data-cy="add-task-input" type="text" placeholder="Add task..." onChange={(e) => {
-        if (value === "") {
-          setValue(e.target.value)
-        }
+        setValue(e.target.value)
       }
       } />
-      <button data-cy="add-task-button" onClick={() => { handleText(value) }}> <GoPlus /></button>
+      <button data-cy="add-task-button" onClick={() => {
+        if (value !== "") {
+          handleText(value)
+        }
+      }}> <GoPlus /></button>
     </div>
   );
 };
