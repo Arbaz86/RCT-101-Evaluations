@@ -18,6 +18,8 @@ const Tasks = ({ todos, onDelete }) => {
       {todos.length === 0 ? (
         <div data-cy="tasks-empty" className={styles.empty}>
           {/* Show when No Tasks are present */}
+          <h3>Empty list</h3>
+          <p>Add a new task above</p>
         </div>
       ) : (
         ""
